@@ -7,12 +7,25 @@ import PokemonCard from "./components/PokemonCard.jsx"
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
     <>
-      <PokemonCard />
+      <PokemonCard image = {pokemonList[1].imgSrc} name = {pokemonList[1].name} />
       
     </>
   )
 }
+
+const pokemonList = [
+  {
+    name: "bulbasaur",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+  },
+  {
+    name: "mew",
+  },
+];
+
 
 export default App
